@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4eef49e5ad.js" crossorigin="anonymous"></script>
+    
+
+    <title>Drew'Sand</title>
+    <style>
+        body{
+            background-color: #f2f2f2;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+
+        .centro{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: .7rem 0;
+        }
+        .centro img{
+            width: calc(50% - .4rem);
+        }
+        
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        .icono{
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+        .icon-negro{
+            color: #292727;
+        }
+        .header{
+            background-color: #183150;
+        }
+        .alto{
+            margin-top: -35px;
+        }
+
+        .img-perfil{
+            padding: 3px;
+            background-color: white;
+        }
+
+        .photos{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+            gap: .6rem;
+        }
+
+        /* GALERIA IMAGENES */
+         
+
+        main{
+            margin-bottom: 200px;
+        }
+    </style>
+  </head>
+  <body>
+    <header class="container-fluid header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Drew'Sand</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Profile</a>
+                </li> 
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Messages</a>
+                </li> 
+                 
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <span class="mr-2"><i class="fas fa-bell icono"></i></span>
+                <div class="usuario">
+                    <img src="img/avatar-dhg.png" class="rounded-circle" alt="" width="30">
+                </div>
+
+              </form>
+            </div>
+          </nav>
+    </header>
+
+    <main class="container pt-5 mt-4">
+        <div class="row">
+
+            <div class="col-lg-3">
+
+                <!-- IMAGEN DE PERIL USUARIO -->
+                <div class="card">
+                    <img src="./img/iceland.jpg" class="card-img-top" alt="...">
+                    <div class="alto text-center">
+                        <img src="./img/avatar-dhg.png" alt="" width="70" class="rounded-circle img-perfil">
+                    </div>
+                    
+                    <div class="card-body text-center">
+                      <h6 class="card-title font-weight-bold">Drew Sand</h6>
+                      <p class="card-text">
+                        I wish I was I little bit taller, wish I wash a baller, 
+                        wish I had a girl...also.    
+                      </p>
+                       
+                      <div class="d-flex w-100 justify-content-around">
+                          <div>
+                              <strong>Friends</strong>
+                              <p class="font-weight-bold">12M</p>
+                          </div>
+
+                          <div class="border-right"></div>
+
+                          <div>
+                              <strong>Enemies</strong>
+                              <p class="font-weight-bold">1</p>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- BIOGRAFIA  USUARIO -->
+                <div class="card my-3">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <span class="font-weight-bold">About</span>
+                            <a href="#">Edit</a>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <span><i class="fas fa-calendar-week icono icon-negro"></i></span>
+                                <span>When to <a href="#">Oh, Canada</a></span>
+                            </li>
+
+                            <li>
+                                <span><i class="fas fa-users icono icon-negro"></i></span>
+                                <span>Became friend with <a href="#">Obama</a></span>
+                            </li>
+
+                            <li>
+                                <span><i class="fas fa-home icono icon-negro"></i></span>
+                                <span>Live in <a href="#">Dallas</a></span>
+                            </li>
+
+                            <li>
+                                <span><i class="fas fa-map-marker-alt icono icon-negro"></i></span>
+                                <span>From <a href="#">Seattle, WA</a></span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- PHOTOS  USUARIO -->
+                <div class="card ">
+                    <div class="card-body">
+                      
+                        <div class="mb-3">
+                            <span class="font-weight-bold">Photos</span>
+                            <a href="#">Edit</a>
+                        </div>
+
+                        <div class="photos">
+                            <img src="./img/instagram_5.jpg" class="img-fluid" alt="">
+                            <img src="./img/instagram_6.jpg" class="img-fluid" alt="">
+                            <img src="./img/instagram_7.jpg" class="img-fluid" alt="">
+                            <img src="./img/instagram_8.jpg" class="img-fluid" alt="">
+                            <img src="./img/instagram_9.jpg" class="img-fluid" alt="">
+                            <img src="./img/instagram_10.jpg" class="img-fluid" alt="">
+                        </div>
+
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+
+                         <form action="">
+                            <div class="input-group">
+                                  
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><i class="fas fa-camera"></i></div>
+                                </div>
+
+                            </div>
+                         </form>
+
+                    </li>
+
+
+                    <li class="list-group-item">
+
+                       <div class="row">
+   
+                            <div class="col-3 text-center">
+                                <img src="./img/avatar-dhg.png" alt="" width="60" class="rounded-circle">
+                            </div>
+
+                            <div class="col-9">
+
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Drew Sand</h6>
+                                    <small class="text-muted">4 min</small>
+                                </div>
+
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+
+                                <!-- GALERIA DE IMAGENES -->
+                                <div class="images">
+                                    <div>
+                                        <img src="./img/unsplash_1.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    
+                                    <div class="centro">
+                                        <img src="./img/instagram_1.jpg" alt="" class="img-fluid">
+
+                                        <img src="./img/instagram_13.jpg" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div>
+                                        <img src="./img/unsplash_2.jpg " alt="" class="img-fluid">
+                                    </div>
+                                     
+                                </div>
+
+                                <!-- CAJA DE COMENTARIOS -->
+                                <div class="media mt-4">
+                                    <img src="./img/persona2.jpg" class="mr-3 rounded-circle" alt="" width="50">
+                                    <div class="media-body">
+                                      <h5 class="mt-0 font-weight-bold">Jacob Trex</h5>
+
+                                      <p> Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.</p>
+                                    </div>
+                                </div>
+
+                                <div class="media mt-1">
+                                    <img src="./img/jessica.jpg" class="mr-3 rounded-circle" alt="" width="50">
+                                    <div class="media-body">
+                                      <h5 class="mt-0 font-weight-bold">Jessica Brown</h5>
+
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                         
+
+                       </div>
+
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="media">
+                            <img src="./img/persona2.jpg" class="mr-3 rounded-circle" alt="..." width="60">
+                            <div class="media-body">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mt-0 font-weight-bold">Jacob Trex</h5>
+                                <small class="text-muted">12 min</small>
+                              </div>
+                              
+                              <p>Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="media">
+                            <img src="./img/jessica.jpg" class="mr-3 rounded-circle" alt="..." width="60">
+                            <div class="media-body">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mt-0 font-weight-bold">Jessica Brown</h5>
+                                <small class="text-muted">34 min</small>
+                              </div>
+                              
+                              <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                            </div>
+                        </div>
+
+                        <div class="img-subida">
+                            <img src="./img/instagram_3.jpg" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="nuevo-comentario">
+                            <div class="media mt-4">
+                                <img src="./img/avatar-dhg.png" class="mr-3 rounded-circle" alt="" width="50">
+                                <div class="media-body">
+                                  <h5 class="mt-0 font-weight-bold">Drew Sand</h5>
+                                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                              </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <a href="#" class="alert-link">Visit your profile!</a> Check your self, you aren't looking well.
+
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+
+                <div class="anuncios">
+
+                    <!-- CARD CON POSTER -->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                          <p class="font-weight-bold">Sponsored</p>
+
+                          <div>
+                              <img src="./img/instagram_2.jpg" alt="" class="img-fluid">
+                          </div>
+
+                          <p class="mt-3">
+                              <strong>It might be time to visit Iceland.</strong> Iceland is so chill, and everything looks cool here. Also, we heard the people are pretty nice. What are you waiting for?
+                          </p>
+
+                          <a href="" class="btn btn-outline-primary">Buy a ticket</a>
+                        </div>
+                    </div>
+
+                    <!-- CARD PERSONAS A SEGUIR -->
+                    <div class="card">
+                        <div class="card-body">
+                           <p>
+                               <strong>Likes</strong>
+                               <a href="">View All</a>
+                           </p>
+
+                           <!-- USUARIOS PARA SEGUIR -->
+                           <div class="media">
+                                <img src="./img/persona2.jpg" class="mr-3 rounded-circle" alt="..." width="50">
+
+                                <div class="media-body"> 
+                                    <p>
+                                        <strong>Jacob Trex</strong>
+                                        @Jtr3
+                                    </p>
+                                    <a href="" class="btn btn-outline-primary">
+                                        <i class="fas fa-user-plus"></i>
+                                        follow
+                                    </a>
+                                </div>
+
+                           </div>
+
+                           <div class="media mt-3">
+                                <img src="./img/jessica.jpg" class="mr-3 rounded-circle" alt="" width="50">
+
+                                <div class="media-body"> 
+                                    <p>
+                                        <strong>Jessica Brown</strong>
+                                        @Jbca23
+                                    </p>
+                                    <a href="" class="btn btn-outline-primary">
+                                        <i class="fas fa-user-plus"></i>
+                                        follow
+                                    </a>
+                                </div>
+
+                           </div>
+
+                        </div>
+
+                        <div class="card-footer text-muted">
+                            Dave really likes these nerds, no one knows why though.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
